@@ -1,6 +1,6 @@
 .headerbanner
 {
-    background-image: url("/src/Images/bg.jpg");
+    background-image: url("src/Images/bg.jpg");
     height: 94vh;
     width: 100%;
     background-position: center;
