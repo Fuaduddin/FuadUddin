@@ -9,7 +9,7 @@ const headerdetails = Vue.createApp({
   const Navbarlogo=Vue.createApp ({
     data(){
         return{
-            icon:"/src/Images/transparenticon.png"
+            icon:"src/Images/transparenticon.png"
         }
     }
   });
