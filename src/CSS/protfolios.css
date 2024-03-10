@@ -53,7 +53,6 @@
     list-style: none;
     gap: 3%;
     font-size: 35px;
-    margin-left: -16%;
 }
 .socialiconsprotfoloils li
 {
@@ -73,16 +72,20 @@
     bottom: 0;
     background-color: orange;
     width: 100%;
-    height: 41px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+     opacity: 0;
     transition: opacity 0.3s ease;
 }
 .protfolioscontainer:hover .protfoliosbutton
 {
     opacity: 1;
+}
+.filterbuttonactive span
+{
+    display: none;
 }
 .activebutton 
 {
@@ -92,6 +95,7 @@
 .activebutton span
 {
     color: black !important;
+    display: block;
 }
 .filtertext
 {

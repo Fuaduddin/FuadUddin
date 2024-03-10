@@ -15,6 +15,10 @@
 .recentwork:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+  ul
+  {
+    padding-left: 0rem !important;
+  }
 .projecticon
 {
     width: 440px;
@@ -66,6 +70,7 @@
     .recentwork
     {
         display: block;
+        padding: 2%;
     }
     .projecticon {
          width: 100%;
@@ -74,7 +79,7 @@
     }
     .projectlink a {
         position: absolute;
-        top: 1px;
+        top: -10px;
         right: 12%;
     }
 }
@@ -84,6 +89,7 @@
     .recentwork
     {
         display: block;
+        padding: 2%;
     }
     .projecticon {
         width: 100%;
@@ -92,7 +98,7 @@
    }
    .projectlink a {
     position: absolute;
-    top: 1px;
+    top: -10px;
     right: 12%;
 }
 }
@@ -101,6 +107,7 @@
 .recentwork
 {
     display: block;
+    padding: 2%;
 }
 .projecticon {
     width: 100%;
@@ -109,7 +116,7 @@
 }
 .projectlink a {
     position: absolute;
-    top: 1px;
+    top: -10px;
     right: 12%;
 }
 }
@@ -123,7 +130,7 @@
    }
    .projectlink a {
     position: absolute;
-    top: 1px;
+    top: -10px;
     right: 12%;
 }
 }
