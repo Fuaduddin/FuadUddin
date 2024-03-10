@@ -5,9 +5,9 @@ const Educationsnapshoot=Vue.createApp({
             educationcapciltitle:"Education",
             educationshortdesc:"Here is a quick summary of my graduation:",
             Educationslist:[
-                {nameinstitude:"East West University",eduction:"B.Sc. in Computer Science and Engineering (Software and Information Systems) ",passingyear:"2021",class:"containertimeline left",logo:"/src/Images/East-west-university-LogoSVG.svg.png",location:"Dhaka"},
-                {nameinstitude:"Milestone College",eduction:"HSC (Science)",passingyear:"2015",class:"containertimeline right",logo:"/src/Images/logo12.png",location:"Dhaka"},
-                {nameinstitude:"Milestone School",eduction:"SSC (Science)",passingyear:"2013",class:"containertimeline left",logo:"/src/Images/logo12.png",location:"Dhaka"},
+                {nameinstitude:"East West University",eduction:"B.Sc. in Computer Science and Engineering (Software and Information Systems) ",passingyear:"2021",class:"containertimeline left",logo:"src/Images/East-west-university-LogoSVG.svg.png",location:"Dhaka"},
+                {nameinstitude:"Milestone College",eduction:"HSC (Science)",passingyear:"2015",class:"containertimeline right",logo:"src/Images/logo12.png",location:"Dhaka"},
+                {nameinstitude:"Milestone School",eduction:"SSC (Science)",passingyear:"2013",class:"containertimeline left",logo:"src/Images/logo12.png",location:"Dhaka"},
             ]
         }
     }
