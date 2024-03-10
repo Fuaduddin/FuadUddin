@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/src/Images/tools-removebg-preview.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">{{title}}</title>
+  <!-- Vue CDN Start -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+   <!-- Vue CDN End -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- Vue Js CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>    
+    <!-- Custome CSS -->
+    <link href="/src/CSS/normalize.css" rel="stylesheet">
+    <link href="/src/CSS/style.css" rel="stylesheet">
+    <link href="/src/CSS/Index.css" rel="stylesheet">
+    <link href="/src/CSS/experience.css" rel="stylesheet">
+    <link href="/src/CSS/recentwork.css" rel="stylesheet">
+    <link href="/src/CSS/education.css" rel="stylesheet">
+    <link href="/src/CSS/common.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbarlist" style="background: transparent !important;" id="navbar">
+    <div class="container-fluid" id="app">
+      <a class="navbar-brand" href="#">
+        <img class="logoimage" v-bind:src="icon">
+      </a>
+      <button class="navbar-toggler custometoggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activenav" href="/Education.html" tabindex="-1" aria-disabled="true">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/experience.html" tabindex="-1" aria-disabled="true">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/RecentWork.html" tabindex="-1" aria-disabled="true">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Protfolios.html" tabindex="-1" aria-disabled="true">Protfolios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/skills.html" tabindex="-1" aria-disabled="true">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="headerbanner" id="headerbanner">
+  <div class="caption">
+    <h1>{{education}}</h1>
+</div>
+</div>
+
+      <!-- Education Section Start -->
+      <section class="mt-5" style="background-color: rgb(249, 250, 251);padding: 4%;" id="educationsection">
+        <div class="container">
+          <div class="row">
+            <div class="contentheadline  mb-3 mt-4">
+              <span class="badge badge-pill badge-secondary pilltext text-center">{{educationcapciltitle}}</span>
+              <h2 class="mt-2">{{educationshortdesc}}</h2>
+            </div>
+            <div class="timeline"v-if="Educationslist.length>0" v-for="education in Educationslist" >
+              <div v-bind:class="education.class">
+                <div class="content d-md-flex justify-md-content-center align-md-items-center">
+                    <div>
+                        <img v-bind:src="education.logo" style="width: 100%;">
+                    </div>
+                    <div class="educationdetails" style="font-size: 18px;text-align: left; margin-left: 6%">
+                        <h4  style="font-size: 18px;">
+                            {{education.eduction}}
+                        </h4>
+                        <p><b><i>Passing Year: {{education.passingyear}}</i></b></p>
+                    </div>
+                </div>
+              </div>
+              </div>
+            <div v-else>
+              <h5 style="text-align: center;color: red;"><b><i>There is no Education to show</i></b></h5>
+            </div>
+            </div>
+
+          </div>
+      
+          </div>
+        </div>
+      </section>
+      <!-- Education Section End -->
+ <!-- Professonal Certificate Section Start -->
+<section class="mt-5" style="padding: 4%;" id="certicatessection">
+  <div class="container">
+    <div class="row">
+      <div class="contentheadline  mb-3 mt-4">
+        <span class="badge badge-pill badge-secondary pilltext text-center">{{Certificatestitle}}</span>
+        <h2 class="mt-2">{{Certificatesshortdesc}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="certicatescontainer" v-if="Certificatesslist.length>0">
+        <div class="certificatebox" v-for="certificate in Certificatesslist">
+          <div class="certificatedetails">
+            <i class="fa fa-graduation-cap" style="font-size:48px;color:white"></i>
+            <div class="">
+              <h2 style="font-size: 20px;">{{certificate.eduction}}</h2>
+              <p style="font-size: 14px;"><b><i>{{certificate.nameinstitude}}-{{certificate.location}}</i></b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-else>
+        <h5 style="text-align: center;color: red;"><b><i>There is no Certificates to show</i></b></h5>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Professonal Certificate  Section End -->
+<!-- Extracariculam Section Start -->
+<section class="mt-5" style="padding: 4%;" id="Extracariculamsection">
+                <div class="container">
+                  <div class="row">
+                    <div class="contentheadline  mb-3 mt-4">
+                      <span class="badge badge-pill badge-secondary pilltext text-center">{{extracariculamtitle}}</span>
+                      <h2 class="mt-2">{{extracariculamshortdesc}}</h2>
+                    </div>
+                    <div class="extracaulam"  v-if="extracariculamslist.length>0">
+                        <div class="cariculamdev" v-for="activities in extracariculamslist">
+                            <div class="cariculamtitle mb-3">
+                              <h2>{{activities.title}}</h2>
+                              <i  v-bind:class="activities.icon" style="font-size:35px;color:red"></i> 
+                            </div>
+                            <ul>
+                                <li v-for="item in activities.itemlist">
+                                  {{item}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div v-else>
+                      <h5 style="text-align: center;color: red;"><b><i>There is no Certificates to show</i></b></h5>
+                    </div>
+                    </div>
+                  </div>
+              
+                  </div>
+                </div>
+</section>
+<!-- Extracariculam Section End -->
+      <footer class="mt-4" style="background-color: rgb(249, 250, 251); width: 100%;">
+        <div class="footer-area-bottom">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="copyright text-center">
+                          <p id="footer_details">
+      
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <script type="module" src="/src/JS/animation.js"></script>
+      <script type="module" src="/src/VUE/education.js"></script>
+      <script type="module" src="/src/VUE/header.js"></script>
+      <script type="module" src="/src/JS/head&footer.js"></script>
+      <script type="module" src="/src/JS/customejs.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/src/Images/tools-removebg-preview.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">{{title}}</title>
+  <!-- Vue CDN Start -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+   <!-- Vue CDN End -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Vue Js CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Custome CSS -->
+    <link href="/src/CSS/normalize.css" rel="stylesheet">
+    <link href="/src/CSS/style.css" rel="stylesheet">
+    <link href="/src/CSS/Index.css" rel="stylesheet">
+    <link href="/src/CSS/experience.css" rel="stylesheet">
+    <link href="/src/CSS/recentwork.css" rel="stylesheet">
+    <link href="/src/CSS/common.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbarlist" style="background: transparent !important;" id="navbar">
+    <div class="container-fluid" id="app">
+      <a class="navbar-brand" href="#">
+        <img class="logoimage" v-bind:src="icon">
+      </a>
+      <button class="navbar-toggler custometoggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Education.html" tabindex="-1" aria-disabled="true">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/experience.html" tabindex="-1" aria-disabled="true">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activenav" href="/RecentWork.html" tabindex="-1" aria-disabled="true">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Protfolios.html" tabindex="-1" aria-disabled="true">Protfolios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/skills.html" tabindex="-1" aria-disabled="true">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="headerbanner" id="headerbanner">
+    <div class="caption">
+      <h1>{{work}}</h1>
+  </div>
+  </div>
+
+      <!-- Experience Section Start -->
+      <section class="mt-4" style="padding: 4%;" id="recentworksection">
+        <div class="container">
+            <div class="row">
+                <div class="contentheadline mb-3 mt-4">
+                    <span class="badge badge-pill badge-secondary pilltext text-center">{{Recentworktitle}}</span>
+                    <h2  class="mt-2">{{RecentworkShortDesc}}</h2>
+                </div>
+              </div>    
+              <div class="row" v-if="works.length>0">
+                <div class="col-sm-12 recentwork" v-for="recentwork in works">
+                    <div class="col-lg-6  col-sm-12">
+                        <img v-bind:src="recentwork.Projectimage" class="projecticon">
+                    </div>
+                    <div class="col-lg-6 col-sm-12 paddingcls projectdetails">
+                        <div>
+                            <h4>
+                                {{recentwork.title}}
+                            </h4>
+                            <p>
+                              {{recentwork.ShortDescrption}}
+                            </p>
+                        </div>
+                        <div>
+                            <h6>Technology :</h6>
+                            <ul class="technolist" v-if="recentwork.technology.length>0">
+                              <li v-for="techno in recentwork.technology">
+                                {{techno}}
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="projectlink">
+                          <a v-bind:href="recentwork.WebsiteLink"><i class="fa fa-arrow-right linkarrow"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+           
+              </div>  
+              <div v-else>
+                <h5 style="text-align: center;color: red;"><b><i>There is no Education to show</i></b></h5>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- Experience Section End -->
+      <footer class="mt-4" style="background-color: rgb(249, 250, 251); width: 100%;">
+        <div class="footer-area-bottom">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="copyright text-center">
+                          <p id="footer_details">
+      
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <script type="module" src="/src/JS/animation.js"></script>
+      <script type="module" src="/src/VUE/recentwork.js"></script>
+      <script type="module" src="/src/JS/animation.js"></script>
+      <script type="module" src="/src/VUE/header.js"></script>
+      <script type="module" src="/src/JS/head&footer.js"></script>
+      <script type="module" src="/src/JS/customejs.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

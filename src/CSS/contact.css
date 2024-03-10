@@ -1,0 +1,31 @@
+.contactfrom
+{
+    padding: 5%;
+}
+.form-group
+{
+    margin: 2% 4% 3% 3%;
+}
+.form-group input
+{
+    border-radius: 10px;
+}
+.submitbutton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submitbutton button
+{
+    padding: 1% 6% 1% 6%;
+    font-size: 20px;
+}
+.contactfrom
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+.contactfrom:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }

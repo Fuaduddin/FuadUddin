@@ -1,0 +1,26 @@
+.skillsicon
+{
+    width: 100%;
+}
+.skillslist
+{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6%;
+}
+.skillpadding
+{
+    padding: 2% !important;
+}
+.skillslisttechno
+{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6%;
+}
+.skillslisttechno
+{
+    padding: 2% !important;
+}

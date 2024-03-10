@@ -1,0 +1,388 @@
+.navbarlist
+{
+    z-index: 20;
+    display: flex;
+}
+.navbarlist ul li a
+{
+    color: white !important;
+}
+.navbarlist .activenav
+{
+    color: gold !important;
+}
+.custometoggle
+{
+    background-color: lightgray !important;
+}
+.logoimage
+{
+    width: 15%;
+}
+.socialicons
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.icons {
+    border-radius: 50%;
+    width: 4.5%;
+    height: 37px;
+    background-color: #bbb;
+    position: relative;
+}
+.icons .github 
+{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30%;
+}
+.icons .linkedin
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30%;
+    color: blue;
+}
+.icons:hover 
+{
+    background-color: orange;
+}
+.personaldesc
+{
+    font-size: 19px;
+    line-height: 27px;
+}
+.buttonactive:hover
+{
+    background-color: lightgray !important;
+    color: white !important;
+    text-align:  center;
+}
+.indeximage
+{
+    width: 100%;
+}
+.contentheadline
+{
+    text-align: center !important;
+}
+.pilltext
+{
+    background-color: orange;
+    font-size: 18px;
+    border-radius: 10%;
+    text-transform: uppercase;
+}
+.carrershort
+{
+    display: flex;
+    gap: 8%;
+}
+.numberdetails
+{
+    text-align: center;
+}
+.progress-value{
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+.text{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+/* TTime Line css Start */
+.content {
+    padding: 20px 30px;
+    background-color: lightblue;;
+    position: relative;
+    border-radius: 14px;
+    text-align: center;
+  }
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: orange;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .containertimeline {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 49.5%;
+  }
+  
+  /* The circles on the timeline */
+  .containertimeline::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #FF9F55;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  
+  /* Add arrows to the right container (pointing left) */
+
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  #footer_details
+  {
+    color: black;
+    font-size: 18px;
+  }
+  .shortlink
+  {
+    display: flex;
+    gap: 5%;
+  }
+  .shortlink a
+  {
+    background-color: #7d2ae8;
+    color: white;
+    font-size: 20px;
+    padding: 1% 4% 1% 3%;
+    border-radius: 10px;
+  }
+  .linkbutton:hover
+  {
+    background-color: #FF9F55 !important;
+    color: white !important;
+  }
+/* Media Query start */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+    .logoimage
+    {
+        float: right;
+        width: 41%;
+    }
+    .icons {
+        width: 10.5%;
+    }
+    .personaldesc {
+        font-size: 15px;
+        line-height: 21px;
+    }
+.socialicons
+{
+    gap: 12%;
+}
+.shortlink
+{
+    display: grid;
+}
+.containertimeline {
+    padding: 3px 0px;
+    position: relative;
+    background-color: inherit;
+    width: 49.5%;
+  }
+  .containertimeline h4 
+  {
+    font-size: 18px;
+    text-align: left;
+  }
+  .contactinfocontainer
+  {
+    display: block !important;
+  }
+  .contactheadline
+{
+    font-size: 17px;
+}
+.contactinfo {
+    background-color: lightgray;
+    width: 100% !important;
+    height: 97px;
+    border-radius: 10px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and  (max-width: 767px){
+    .logoimage
+    {
+        float: right;
+        width: 41% !important;
+    }
+    .icons {
+        width: 10.5%;
+    }
+.socialicons
+{
+    gap: 12%;
+}
+.personaldesc {
+    font-size: 15px;
+    line-height: 21px;
+}
+.shortlink
+{
+    display: grid;
+}
+.contactinfocontainer
+{
+  display: block !important;
+}
+.contactheadline
+{
+    font-size: 17px;
+}
+
+.headerbanner {
+    background-image: url(/src/Images/bg.jpg);
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerbanner {
+    height: 30vh;
+}
+.contactinfo {
+    background-color: lightgray;
+    width: 100% !important;
+    height: 97px;
+    border-radius: 10px;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width:991px ) and (min-width: 768px) {
+    .logoimage
+    {
+        float: right;
+        width: 41% !important;
+    }
+    .icons {
+        width: 6.5%;
+    }
+.socialicons
+{
+    gap: 12%;
+}
+.shortlink
+{
+    display: grid;
+}
+.contactheadline
+{
+    font-size: 17px;
+}
+.headerbanner {
+   background-position: center;
+    background-size: 100% 94vh !important;
+}
+.contactinfo {
+    background-color: lightgray;
+    width: 51% !important;
+    height: 97px;
+    border-radius: 10px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and(min-width: 1199px) {
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+      }
+      .contactinfo {
+        background-color: lightgray;
+        width: 51% !important;
+        height: 97px;
+        border-radius: 10px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (main-width: 1200px) {
+    .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+      }
+}

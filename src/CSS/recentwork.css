@@ -1,0 +1,134 @@
+.recentwork
+{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
+    border-radius: 12px;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 2% 0% 2% 0%;
+}
+.recentwork:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+.projecticon
+{
+    width: 440px;
+    height: 418px;
+    border-radius: 5%;
+    margin-left: 13%;
+}
+.paddingcls
+{
+    padding: 4%;
+}
+.technolist
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    list-style: none;
+}
+.technolist li
+{
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+.projectlink
+{
+  float: right;
+  position: relative;
+}
+.projectlink a
+{
+    position: absolute;
+    top: 73px;
+    right: 12%;
+}
+.linkarrow
+{
+    color: gray;
+    font-size: 30px;
+
+}
+.projectlink a :hover
+{
+    color: orange;   
+}
+/* Media Query start */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+    .recentwork
+    {
+        display: block;
+    }
+    .projecticon {
+         width: 100%;
+        height: auto;
+        margin-left: 0%;
+    }
+    .projectlink a {
+        position: absolute;
+        top: 1px;
+        right: 12%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and  (max-width: 767px){
+    .recentwork
+    {
+        display: block;
+    }
+    .projecticon {
+        width: 100%;
+       height: auto;
+       margin-left: 0%;
+   }
+   .projectlink a {
+    position: absolute;
+    top: 1px;
+    right: 12%;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width:991px ) and (min-width: 768px) {
+.recentwork
+{
+    display: block;
+}
+.projecticon {
+    width: 100%;
+   height: auto;
+   margin-left: 0%;
+}
+.projectlink a {
+    position: absolute;
+    top: 1px;
+    right: 12%;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and(min-width: 1199px) {
+    .projecticon {
+        width: 100%;
+       height: auto;
+       margin-left: 0%;
+   }
+   .projectlink a {
+    position: absolute;
+    top: 1px;
+    right: 12%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}

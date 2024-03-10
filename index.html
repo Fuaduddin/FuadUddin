@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/src/Images/tools-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">{{title}}</title>
+    <!-- Vue CDN Start -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+     <!-- Vue CDN End -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Custome CSS -->
+    <link href="/src/CSS/normalize.css" rel="stylesheet">
+    <link href="/src/CSS/style.css" rel="stylesheet">
+    <link href="/src/CSS/Index.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarlist" style="background: transparent !important;" id="navbar">
+      <div class="container-fluid" id="app">
+        <a class="navbar-brand" href="#">
+          <img class="logoimage" v-bind:src="icon">
+        </a>
+        <button class="navbar-toggler custometoggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link activenav" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Education.html" tabindex="-1" aria-disabled="true">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/experience.html" tabindex="-1" aria-disabled="true">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/RecentWork.html" tabindex="-1" aria-disabled="true">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Protfolios.html" tabindex="-1" aria-disabled="true">Protfolios</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="/skills.html" tabindex="-1" aria-disabled="true">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Banner Start -->
+    <div id="hero">
+
+      <video
+      loop
+      muted
+      autoplay
+      preload="auto"
+      >
+            <source src="/src/Images/compressed.mp4" type="video/mp4">
+            Your browser does not support the video tag.  
+      </video>
+      <div class="caption">
+            <h1>Welcome, I am Fuad Uddin</h1>
+            <h2>Full Stack Developer </h2>
+            <div class="mt-4">
+              <ul class="socialicons">
+                <li  class="icons">
+                  <a href="https://github.com/Fuaduddin?tab=repositories" class="github btn">
+                    <i class="fa fa-github" style="font-size: 46px;"></i>
+                  </a>
+                </li>
+                <li  class="icons">
+                  <a href="https://www.linkedin.com/in/fuad-uddin-382388212/" class="linkedin btn">
+                    <i class="fa fa-linkedin-square" style="font-size: 46px;"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+      </div>
+
+</div>
+<!-- Hero Banner END -->
+
+<!-- About me short desc Start -->
+<section class="mt-4" style=" padding: 4%;">
+  <div class="container">
+    <div class="row">
+      <div class="contentheadline mb-3">
+        <span class="badge badge-pill badge-secondary pilltext text-center">ABOUT</span>
+        <h2 class="mt-2">About Me</h2>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12">
+        <img class="indeximage" src="/src/Images/about.jpg">
+      </div>
+      <div class="col-lg-7 col-md-12 col-sm-12 mt-3">
+        <div>
+          <h2><b><i>Hi there, I am Fuad Uddin</i></b></h2>
+          <p class="personaldesc">
+            At present I am working as Sitecore Developer at Byte Heart and I have served as a key technical engineer for Garbageman also. Where I have been repeatedly recognized for developing innovative solutions for complex software and systems. I am responsible for full life cycle development of next-generation software, from initial requirement gathering to design, coding, testing, documentation, and implementation. My technical expertise includes cross-platform proficiency (Windows and Linux); fluency in some scripting/programming languages (including C, C++, SQL, WordPress, Python, PHP).I have worked in projects related to PHP, SQL, .NET, Sitecore, MVC, Bootstrap, JavaScript and MYSQL, GitHub for last two years.
+          </p>
+          <p class="personaldesc">
+            I have completed my B.Sc. in Computer Science and Engineering (Software and Information Systems) from East West University. I also have done different hands-on projects focusing on Data Analysis, Data Visualization, Data Science, and Graphics Designing. I also have real-life experience using popular programming languages to create and implement software applications. I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me.
+          </p>
+        </div>
+        <div class="carrershort">
+          <div class="numberdetails">
+            <span class="progress-value" id="progress-value-Experience"></span>
+            <br/>
+            <span class="text"><b><i>Experience</i></b></span>
+          </div>
+          <div  class="numberdetails">
+            <span class="progress-value" id="progress-value-ClientProjects"></span>
+            <br/>
+            <span class="text"><b><i>Client Projects</i></b></span>
+          </div>
+          <div  class="numberdetails">
+            <span class="progress-value" id="progress-value-PersonalProjects"></span>
+              <br/>
+              <span class="text"><b><i>Personal Projects</i></b></span>
+          </div>
+        </div>
+        <div>
+      </div>
+      <div>
+        <div class="shortlink mt-3">
+          <a href="experience.html" class="btn linkbutton">Experince</a>
+          <a href="RecentWork.html" class="btn linkbutton">Recent Work</a>
+          <a href="Protfolios.html" class="btn linkbutton">Protfolios</a>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<!-- About me short desc END -->
+<!-- Carrer Snapshot Start -->
+<!-- <carrersnapshot :carrer="carrers" :ShortDesc="ShortDesc" :capculetitle="capculetitle"></carrersnapshot> -->
+<section class="mt-5" style="background-color: rgb(249, 250, 251);padding: 4%;" id="carrer">
+  <div class="container">
+    <div class="row">
+      <div class="contentheadline  mb-3 mt-4">
+        <span class="badge badge-pill badge-secondary pilltext text-center">{{capculetitle}}</span>
+        <h2 class="mt-2">{{ShortDesc}}</h2>
+      </div>
+      <div class="timeline" v-if="carrers.length>0" v-for="carrer in carrers ">
+        <div v-bind:class="carrer.class">
+          <div class="content">
+            <h4>
+              {{carrer.title}}
+            </h4>
+            <p><b><i>{{carrer.expernc}}</i></b></p>
+          </div>
+        </div>
+        </div>
+        <div v-else>
+          <h5 style="text-align: center;color: red;"><b><i>There is no carrer to show</i></b></h5>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<!-- About me short desc END -->
+<!-- Footer Start -->
+<footer class="mt-4" style="background-color: rgb(249, 250, 251); width: 100%;">
+  <div class="footer-area-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="copyright text-center">
+                    <p id="footer_details">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script type="module" src="/src/VueTemplates/templates.js"></script>
+    <script type="module" src="/src/JS/animation.js"></script>
+    <script type="module" src="/src/VUE/header.js"></script>
+    <script type="module" src="/src/VUE/experience.js"></script>
+    <script type="module" src="/src/JS/head&footer.js"></script>
+    <script type="module" src="/src/JS/customejs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
