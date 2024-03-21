@@ -68,6 +68,11 @@
 {
     color: orange;
 }
+.extracariculamlist
+{
+    padding: 2%;
+    margin-left: 9%;
+}
 /* Media Query start */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599px) {
