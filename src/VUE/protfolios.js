@@ -165,7 +165,7 @@ const Protfolioswork=Vue.createApp({
                     category:2
                 },
                 {
-                    Image:"src/Images/Protfolios/ebookstore",
+                    Image:"src/Images/Protfolios/ebookstore.jpg",
                     Title:"E-Book Store",
                     link:"https://github.com/Fuaduddin/BookStore",
                     Details:"There are 5 user groups which are Super Admin, Admin, Customer,Blogger and Publisher.  Only those who have registered can enter the system. They all can login to their Dashboards according to their role. Customer can order their product and they also can view their order details and track them. Admin and supper admin can maintain book store information and needed book details to the Publisher. Publisher can view book order list and also can add their new book details. Blogger can add new blogs and view there all blogs. Super Admin can add or remove book , calculate orders, book , and admin according to the system need.",
