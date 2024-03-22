@@ -7,7 +7,7 @@ const CarrerSnapshot= Vue.createApp({
             ShortDesc:"Here is a quick summary of my Carrer:",
             carrers:[
                 {title:"Software Engineer",expernc:"2 years", class:"containertimeline left"},
-                {title:"PHP Developer",expernc:"2 years", class:"containertimeline right"},
+                {title:"PHP Developer",expernc:"1 years", class:"containertimeline right"},
                 {title:"WordPress Developer (Intern)",expernc:"4 months",class:"containertimeline left"}
             ]
         }

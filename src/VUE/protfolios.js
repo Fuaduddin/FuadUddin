@@ -164,6 +164,30 @@ const Protfolioswork=Vue.createApp({
                     DB:"",
                     category:2
                 },
+                {
+                    Image:"src/Images/Protfolios/ebookstore",
+                    Title:"E-Book Store",
+                    link:"https://github.com/Fuaduddin/BookStore",
+                    Details:"There are 5 user groups which are Super Admin, Admin, Customer,Blogger and Publisher.  Only those who have registered can enter the system. They all can login to their Dashboards according to their role. Customer can order their product and they also can view their order details and track them. Admin and supper admin can maintain book store information and needed book details to the Publisher. Publisher can view book order list and also can add their new book details. Blogger can add new blogs and view there all blogs. Super Admin can add or remove book , calculate orders, book , and admin according to the system need.",
+                    Technology:[
+                      "ASP.NET MVC (Entity Framework)","HTML","CSS","Bootstrap 5","JavaScript","C#",
+                      "Ajax","jQuery","SQL","3-Layer Architure"
+                    ],
+                    DB:"SQL Server",
+                    category:5
+                },
+                {
+                    Image:"src/Images/Protfolios/tour.jpg",
+                    Title:"Travel and Tourism Management System (Pacific)",
+                    link:"https://github.com/Fuaduddin/PacifiTourTraveling",
+                    Details:"There are 7 user groups which are Super Admin, Admin, Customer,Blogger,Hotel Manager, Bus Manager and Airplane Manager. Only those who have registered can enter the system. They all can login to their Dashboards according to their role.Customer can booked their traveling tickets or hotel rooms or a tour package and they also can view their booked details and track them. Customer can sign up using their  Facebook or Gmaill account.Admin and supper admin can maintain all kind of booking information and  package booking information. Hotel Manager, Bus Manager and Airplane Manager can view booking list and also can add their new Offer or packages. Blogger can add new blogs and view there all blogs. Super Admin can add or remove booking and package, calculate booking , and admin according to the system need.",
+                    Technology:[
+                      "ASP.NET MVC (Entity Framework)","HTML","CSS","Bootstrap 5","JavaScript","C#",
+                      "Ajax","jQuery","SQL","3-Layer Architure"
+                    ],
+                    DB:"SQL Server",
+                    category:5
+                },
             ],
             ProtfoliosLIst2:[],
             eerrormsg:""
