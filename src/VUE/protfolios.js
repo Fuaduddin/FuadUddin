@@ -188,6 +188,17 @@ const Protfolioswork=Vue.createApp({
                     DB:"SQL Server",
                     category:5
                 },
+                {
+                    Image:"src/Images/Protfolios/libary.jpg",
+                    Title:"Library Management System",
+                    link:"https://github.com/Fuaduddin/LibaryManagemetSystem",
+                    Details:"Includes online borrowing and book management. In returning book are also offered through online access for customers and internal staffs.",
+                    Technology:[
+                      "PHP","HTML","CSS","Bootstrap 5","JavaScript","jQuery","SQL"
+                    ],
+                    DB:"MySQL",
+                    category:6
+                },
             ],
             ProtfoliosLIst2:[],
             eerrormsg:""
