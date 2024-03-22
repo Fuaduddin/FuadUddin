@@ -194,7 +194,7 @@ const Protfolioswork=Vue.createApp({
                     link:"https://github.com/Fuaduddin/LibaryManagemetSystem",
                     Details:"Includes online borrowing and book management. In returning book are also offered through online access for customers and internal staffs.",
                     Technology:[
-                      "PHP","HTML","CSS","Bootstrap 5","JavaScript","jQuery","SQL"
+                      "PHP","HTML","CSS","Bootstrap-5","SQL"
                     ],
                     DB:"MySQL",
                     category:6
