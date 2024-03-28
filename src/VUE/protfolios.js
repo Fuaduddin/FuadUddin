@@ -11,7 +11,7 @@ const Protfolioswork=Vue.createApp({
                 {id:5,categoryname:"ASP.NET"},
                 {id:6,categoryname:"PHP"},
                 {id:7,categoryname:"TypeScript"},
-               // {id:8,categoryname:"Tailwind"},
+                {id:8,categoryname:"Tailwind"},
             ],
             ProtfoliosLIst:[
               {
@@ -233,6 +233,28 @@ const Protfolioswork=Vue.createApp({
                     ],
                     DB:"",
                     category:7
+                },
+                {
+                    Image:"src/Images/Protfolios/blog-category.jpg",
+                    Title:"Blog Page Template",
+                    link:"#",
+                    Details:"OnGoing Project",
+                    Technology:[
+                      
+                    ],
+                    DB:"",
+                    category:8
+                },
+                {
+                    Image:"src/Images/Protfolios/landingpage.jpg",
+                    Title:"Landing Page",
+                    link:"#",
+                    Details:"OnGoing Project",
+                    Technology:[
+                      
+                    ],
+                    DB:"",
+                    category:8
                 },
             ],
             ProtfoliosLIst2:[],
