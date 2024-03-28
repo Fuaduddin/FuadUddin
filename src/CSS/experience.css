@@ -31,7 +31,7 @@
  }
  .yeardetails
  {
-     margin-left: 0%;
+     margin-left: 0% !important;
  }
 }
 
@@ -51,7 +51,7 @@
 @media only screen and (max-width:991px ) and (min-width: 768px) {
     .yeardetails
     {
-        margin-left: -54%;
+        margin-left: -150%;
     }
 }
 
@@ -59,14 +59,14 @@
 @media only screen and (min-width: 992px) and(min-width: 1199px) {
     .yeardetails
     {
-        margin-left: -54%;
+        margin-left: -77%;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 .yeardetails
 {
-    margin-left: -54%;
+    margin-left: -77%;
 }
 }

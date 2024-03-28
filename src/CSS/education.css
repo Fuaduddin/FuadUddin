@@ -73,6 +73,10 @@
     padding: 2%;
     margin-left: 9%;
 }
+.textcontaineredu
+{
+    color: white;
+}
 /* Media Query start */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 599px) {

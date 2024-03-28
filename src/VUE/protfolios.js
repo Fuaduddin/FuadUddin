@@ -10,6 +10,8 @@ const Protfolioswork=Vue.createApp({
                 {id:4,categoryname:"Python"},
                 {id:5,categoryname:"ASP.NET"},
                 {id:6,categoryname:"PHP"},
+                {id:7,categoryname:"TypeScript"},
+               // {id:8,categoryname:"Tailwind"},
             ],
             ProtfoliosLIst:[
               {
@@ -198,6 +200,39 @@ const Protfolioswork=Vue.createApp({
                     ],
                     DB:"MySQL",
                     category:6
+                },
+                {
+                    Image:"src/Images/Protfolios/coffeeshop.jpg",
+                    Title:"Coffee Shop",
+                    link:"#",
+                    Details:"OnGoing Project",
+                    Technology:[
+                      
+                    ],
+                    DB:"",
+                    category:2
+                },
+                {
+                    Image:"src/Images/Protfolios/WeatherApplication.jpg",
+                    Title:"Weather Application",
+                    link:"#",
+                    Details:"OnGoing Project",
+                    Technology:[
+                      
+                    ],
+                    DB:"",
+                    category:7
+                },
+                {
+                    Image:"src/Images/Protfolios/task-scheduler.png",
+                    Title:"Task Scheduler",
+                    link:"#",
+                    Details:"OnGoing Project",
+                    Technology:[
+                      
+                    ],
+                    DB:"",
+                    category:7
                 },
             ],
             ProtfoliosLIst2:[],
