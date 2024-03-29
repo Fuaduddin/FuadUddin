@@ -180,18 +180,6 @@ const Protfolioswork=Vue.createApp({
                     category:5
                 },
                 {
-                    Image:"src/Images/Protfolios/tour.jpg",
-                    Title:"Travel and Tourism Management System (Pacific)",
-                    link:"https://github.com/Fuaduddin/PacifiTourTraveling",
-                    Details:"There are 7 user groups which are Super Admin, Admin, Customer,Blogger,Hotel Manager, Bus Manager and Airplane Manager. Only those who have registered can enter the system. They all can login to their Dashboards according to their role.Customer can booked their traveling tickets or hotel rooms or a tour package and they also can view their booked details and track them. Customer can sign up using their  Facebook or Gmaill account.Admin and supper admin can maintain all kind of booking information and  package booking information. Hotel Manager, Bus Manager and Airplane Manager can view booking list and also can add their new Offer or packages. Blogger can add new blogs and view there all blogs. Super Admin can add or remove booking and package, calculate booking , and admin according to the system need.",
-                    Technology:[
-                      "ASP.NET MVC (Entity Framework)","HTML","CSS","Bootstrap 5","JavaScript","C#",
-                      "Ajax","jQuery","SQL","3-Layer Architure"
-                    ],
-                    DB:"SQL Server",
-                    category:5
-                },
-                {
                     Image:"src/Images/Protfolios/libary.jpg",
                     Title:"Library Management System",
                     link:"https://github.com/Fuaduddin/LibaryManagemetSystem",
@@ -202,6 +190,18 @@ const Protfolioswork=Vue.createApp({
                     DB:"MySQL",
                     category:6
                 },
+                // {
+                //     Image:"src/Images/Protfolios/tour.jpg",
+                //     Title:"Travel and Tourism Management System (Pacific)",
+                //     link:"https://github.com/Fuaduddin/PacifiTourTraveling",
+                //     Details:"There are 7 user groups which are Super Admin, Admin, Customer,Blogger,Hotel Manager, Bus Manager and Airplane Manager. Only those who have registered can enter the system. They all can login to their Dashboards according to their role.Customer can booked their traveling tickets or hotel rooms or a tour package and they also can view their booked details and track them. Customer can sign up using their  Facebook or Gmaill account.Admin and supper admin can maintain all kind of booking information and  package booking information. Hotel Manager, Bus Manager and Airplane Manager can view booking list and also can add their new Offer or packages. Blogger can add new blogs and view there all blogs. Super Admin can add or remove booking and package, calculate booking , and admin according to the system need.",
+                //     Technology:[
+                //       "ASP.NET MVC (Entity Framework)","HTML","CSS","Bootstrap 5","JavaScript","C#",
+                //       "Ajax","jQuery","SQL","3-Layer Architure"
+                //     ],
+                //     DB:"SQL Server",
+                //     category:5
+                // },
                 {
                     Image:"src/Images/Protfolios/coffeeshop.jpg",
                     Title:"Coffee Shop",
@@ -253,6 +253,16 @@ const Protfolioswork=Vue.createApp({
                     Details:"OnGoing Project",
                     Technology:[
                       
+                    ],
+                    DB:"",
+                    category:15
+                },
+                {
+                    Image:"src/Images/Protfolios/tour.jpg",
+                    Title:"Travel and Tourism Management System (Pacific)",
+                    link:"#",
+                    Details:"OnGoing Project",
+                    Technology:[
                     ],
                     DB:"",
                     category:15
