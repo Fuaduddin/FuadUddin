@@ -10,8 +10,9 @@ const Protfolioswork=Vue.createApp({
                 {id:4,categoryname:"Python"},
                 {id:5,categoryname:"ASP.NET"},
                 {id:6,categoryname:"PHP"},
-                {id:7,categoryname:"TypeScript"},
-                {id:8,categoryname:"Tailwind"},
+              //  {id:7,categoryname:"TypeScript"},
+               // {id:8,categoryname:"Tailwind"},
+               {id:15,categoryname:"On Going"},
             ],
             ProtfoliosLIst:[
               {
@@ -210,7 +211,7 @@ const Protfolioswork=Vue.createApp({
                       
                     ],
                     DB:"",
-                    category:2
+                    category:15
                 },
                 {
                     Image:"src/Images/Protfolios/WeatherApplication.jpg",
@@ -221,7 +222,7 @@ const Protfolioswork=Vue.createApp({
                       
                     ],
                     DB:"",
-                    category:7
+                    category:15
                 },
                 {
                     Image:"src/Images/Protfolios/task-scheduler.png",
@@ -232,7 +233,7 @@ const Protfolioswork=Vue.createApp({
                       
                     ],
                     DB:"",
-                    category:7
+                    category:15
                 },
                 {
                     Image:"src/Images/Protfolios/blog-category.jpg",
@@ -243,7 +244,7 @@ const Protfolioswork=Vue.createApp({
                       
                     ],
                     DB:"",
-                    category:8
+                    category:15
                 },
                 {
                     Image:"src/Images/Protfolios/landingpage.jpg",
@@ -254,7 +255,7 @@ const Protfolioswork=Vue.createApp({
                       
                     ],
                     DB:"",
-                    category:8
+                    category:15
                 },
             ],
             ProtfoliosLIst2:[],
