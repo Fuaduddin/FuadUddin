@@ -5,7 +5,7 @@ const Protfolioswork=Vue.createApp({
             protfolioscategory:[
                 {id:0,categoryname:"All"},
                 {id:1,categoryname:"Front-End"},
-                {id:2,categoryname:"Vue JS"},
+              // {id:2,categoryname:"Vue JS"},
                 {id:3,categoryname:"Sitecore(CMS)"},
                 {id:4,categoryname:"Python"},
                 {id:5,categoryname:"ASP.NET"},
@@ -165,7 +165,7 @@ const Protfolioswork=Vue.createApp({
                         " Vue Js"
                     ],
                     DB:"",
-                    category:2
+                    category:1
                 },
                 {
                     Image:"src/Images/Protfolios/ebookstore.jpg",
