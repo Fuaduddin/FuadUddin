@@ -163,6 +163,16 @@
           </div>
         </div>
         </div>
+        <div class="formobile" v-if="carrers.length>0" v-for="carrer in carrers ">
+          <div class="formobileversion">
+            <div class="content">
+              <h4>
+                {{carrer.title}}
+              </h4>
+              <p><b><i>{{carrer.expernc}}</i></b></p>
+            </div>
+          </div>
+          </div>
         <div v-else>
           <h5 style="text-align: center;color: red;"><b><i>There is no carrer to show</i></b></h5>
         </div>

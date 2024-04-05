@@ -25,6 +25,7 @@
     <link href="src/CSS/recentwork.css" rel="stylesheet">
     <link href="src/CSS/education.css" rel="stylesheet">
     <link href="src/CSS/common.css" rel="stylesheet">
+    <link href="src/CSS/Index.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbarlist" style="background: transparent !important;" id="navbar">
@@ -92,6 +93,21 @@
                 </div>
               </div>
               </div>
+              <div class="formobile"v-if="Educationslist.length>0" v-for="education in Educationslist" >
+                <div class="formobileversion">
+                  <div class="content d-flex justify-content-center align-items-center">
+                      <div>
+                          <img v-bind:src="education.logo" style="width: 68%;">
+                      </div>
+                      <div class="educationdetails" style="font-size: 18px;text-align: left; margin-left: 6%">
+                          <h4  style="font-size: 18px;">
+                              {{education.eduction}}
+                          </h4>
+                          <p><b><i>Passing Year: {{education.passingyear}}</i></b></p>
+                      </div>
+                  </div>
+                </div>
+                </div>
             <div v-else>
               <h5 style="text-align: center;color: red;"><b><i>There is no Education to show</i></b></h5>
             </div>
