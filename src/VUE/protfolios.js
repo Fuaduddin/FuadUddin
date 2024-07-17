@@ -270,8 +270,8 @@ const Protfolioswork=Vue.createApp({
                 },
                 {
                     Image:"src/Images/Protfolios/hackerrank-software.png",
-                    Title:"Expense Tracker",
-                    link:"#",
+                    Title:"Hacker Rank",
+                    link:"https://github.com/Fuaduddin/HackerRank",
                     Details:" I have actively engaged with HackerRank, solving a diverse range of problems that honed my skills in algorithmic thinking, data structures, and programming languages like Python, C, C++, and JavaScript. This experience strengthened my technical abilities and enhanced my problem-solving mindset for real-world projects and tasks.",
                     Technology:[
                     ],
