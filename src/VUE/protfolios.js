@@ -12,6 +12,7 @@ const Protfolioswork=Vue.createApp({
                 {id:6,categoryname:"PHP"},
               //  {id:7,categoryname:"TypeScript"},
                // {id:8,categoryname:"Tailwind"},
+               {id:16,categoryname:"Problem Solving"},
                {id:15,categoryname:"On Going"},
             ],
             ProtfoliosLIst:[
@@ -266,6 +267,17 @@ const Protfolioswork=Vue.createApp({
                     ],
                     DB:"",
                     category:15
+                },
+                {
+                    Image:"src/Images/Protfolios/hackerrank-software.png",
+                    Title:"Expense Tracker",
+                    link:"#",
+                    Details:" I have actively engaged with HackerRank, solving a diverse range of problems that honed my skills in algorithmic thinking, data structures, and programming languages like Python, C, C++, and JavaScript. This experience strengthened my technical abilities and enhanced my problem-solving mindset for real-world projects and tasks.",
+                    Technology:[
+                    ],
+                    DB:"",
+                    category:16,
+                    livedemo:""
                 },
             ],
             ProtfoliosLIst2:[],
