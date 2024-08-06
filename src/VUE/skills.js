@@ -9,7 +9,7 @@ const Skillslist= Vue.createApp({
                 {
                     title:"Back-End",
                     skills:[
-                        "src/Images/Back-end/58481791cef1014c0b5e4994.png","src/Images/Back-end/ajax-removebg-preview.png",
+                        "src/Images/Back-end/ajax-removebg-preview.png",
                         "src/Images/Back-end/apiu-removebg-preview.png","src/Images/Back-end/—Pngtree—sql file document icon_4166149 (1).png","src/Images/Back-end/asp.net_mvc-removebg-preview.png","src/Images/Back-end/asp.netcore-removebg-preview.png",
                         "src/Images/Back-end/json-removebg-preview.png"
                     ]
@@ -25,7 +25,7 @@ const Skillslist= Vue.createApp({
                 {
                     title:"Programming Language",
                     skills:[
-                        "src/Images/programming/c-removebg-preview.png","src/Images/programming/c++.png"
+                        "src/Images/programming/c-removebg-preview.png","src/Images/programming/c++.png","src/Images/programming/C#.jpg"
                     ]
                 },
                 {
