@@ -18,7 +18,7 @@ const Recentwork=Vue.createApp({
                 title:"Addeco",
                 ShortDescrption:"It’s an existing web application built on Sitecore technology. Work for their Content Management, Build Sitecore forms and Front-end development.",
                 technology:[
-                    "jQuery","JavaScript","HTML","CSS","Sitecore","Bootstrap 5"
+                    "jQuery","JavaScript","HTML","CSS","Sitecore","Bootstrap 5","Sitecore"
                 ],
                 WebsiteLink:"https://www.adecco.co.uk/"},
                 {
