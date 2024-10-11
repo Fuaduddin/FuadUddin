@@ -25,7 +25,7 @@ const Skillslist= Vue.createApp({
                 {
                     title:"Programming Language",
                     skills:[
-                        "src/Images/programming/c-removebg-preview.png","src/Images/programming/c++.png","src/Images/programming/C#.jpg"
+                        "src/Images/programming/c-removebg-preview.png","src/Images/programming/c++.png","src/Images/programming/csharp.png"
                     ]
                 },
                 {
@@ -58,7 +58,7 @@ const Skillslist= Vue.createApp({
                 {
                     title:"Data Base",
                     skills:[
-                        "src/Images/Technical Skills/mysql-removebg-preview.png", "src/Images/Technical Skills/sql-removebg-preview (1).png",
+                        "src/Images/Technical Skills/mysql-removebg-preview.png", "src/Images/Technical Skills/sql-removebg-preview (1).png","src/Images/Technical Skills/Oracle.jpg"
                     ]
                 },
                 {

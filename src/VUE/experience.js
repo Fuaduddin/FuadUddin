@@ -22,18 +22,20 @@ const  Experiencedetails= Vue.createApp({
             EXPcapculetitle:"EXPERIENCE",
             EXPShortDesc:"Here is a quick summary of my most recent experiences:",
             EXPcarrers:[
-                {companyname:"PRAN-RFL Group",companylogo:"src/Images/pran.jpg", title:"Trainee Engineer .Net Developer",Session:"August 2024 - Continue", 
+                {companyname:"PRAN-RFL Group",companyURL:"https://rflbd.com/", companylogo:"src/Images/pran.jpg", title:"Trainee Engineer .Net Developer",Session:"August 2024 - Continue", 
                     KeyResposibility:[
-                        "Have used .NET and SQL server to developed dynamic Web Application.",
-                        "Familiar with OOP,JSON & Restful API.",
+                        "Have used .NET and Oracle server to developed dynamic Web Application.",
+                        "Develop software with Oracle Database and ADO.NET Core",
                         "Familiar with Software Development Life Cycle & 3-layer  Architecture.",
                         "Worked with Git & GitHub",
                         "Implementing new features, maintaining existing code, and fixing bugs.",
                         "Collaborate with the developer team to ensure project structure and provide ideas for best practices and project approaches",
                         "Developed software solutions and  logic by studying information needs, systems flow, data usage, and work processes.",
-                        "Integrate with  deployment teams for configuration changes and generated report"
+                        "Handeled Client and fuilled Client requierment.",
+                        "Collaborate with the QA team to ensure responsiveness, efficiency & Generated Report.",
+                        "Worked with Front-End Team to build responsive Web features. "
                 ]},
-                {companyname:"Garbage Man",companylogo:"src/Images/garbageman.png", title:"Software Engineer (Contractual)",Session:"January 2024 - July 2024", 
+                {companyname:"Garbage Man",companyURL:"https://garbageman.com.bd/",companylogo:"src/Images/garbageman.png", title:"Software Engineer (Contractual)",Session:"January 2024 - July 2024", 
                     KeyResposibility:[
                         "Collaborate with the developer team with code reviews and sharing expertise with other developers.",
                         "Have used .NET and SQL server to developed dynamic Web Application.",
@@ -46,7 +48,7 @@ const  Experiencedetails= Vue.createApp({
                         "Familiar with Software Development Life Cycle , OPP & 3-layer  Architecture.",
                         "Integrate with  deployment teams for configuration changes and generated report"
                 ]},
-                {companyname:"Byte Heart",companylogo:"src/Images/byteherar.png", title:"Software Engineer",Session:"March 2022 - December 2023", 
+                {companyname:"Byte Heart",companyURL:"http://byteheart.com/",companylogo:"src/Images/byteherar.png", title:"Software Engineer",Session:"March 2022 - December 2023", 
                 KeyResposibility:[
                     "Collaborate with the developer team with code reviews and sharing expertise with other developers.",
                     "Have used .NET and SQL server to developed dynamic Web Application.",
@@ -60,7 +62,7 @@ const  Experiencedetails= Vue.createApp({
                     "Integrate with  deployment teams for configuration changes and generated report."
                 ]},
                 
-                {companyname:"Wephic",companylogo:"src/Images/wephic.png", title:"WordPress Developer (Intern)",Session:"May 2020 – August 2020", 
+                {companyname:"Wephic",companyURL:"https://www.wephic.com/",companylogo:"src/Images/wephic.png", title:"WordPress Developer (Intern)",Session:"May 2020 – August 2020", 
                 KeyResposibility:[
                     "Monitor and maintain system health and performance.",
                     "Developed and document technical specifications for projects.",
