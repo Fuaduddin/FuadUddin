@@ -148,13 +148,45 @@
 </section>
 <!-- Professonal Certificate  Section End -->
  <!-- Professonal Certificate  SLider Section Start -->
-<!-- <section  class="mt-5">
+ <section class="mt-5" v-if="ImageGallery.length > 0">
   <div class="container">
     <div class="row">
-      <h4>Image SLider</h4>
+      <div class="slider" id="imagegallerycontainer">
+        <div class="slides">
+          <div class="slide" v-for="(image, index) in ImageGalleryList" :key="index" ref="slides">
+            <img v-bind:src="image.src" alt="Image" @click="openModal(image.src)">
+        </div>
+        </div>
+        <!-- Navigation buttons -->
+        <button class="prev" @click="prevSlide()">❮</button>
+        <button class="next" @click="nextSlide()">❯</button>
+    </div>
+    <!-- Thumbnails -->
+    <!-- <div class="thumbnails" id="thumbnails" style="display: none;">
+      <img id="showimage"src="" alt="Thumbnail" class="thumbnail" @click="selectImage(index)" 
+      />
+  </div> -->
+      </div>
     </div>
   </div>
-</section> -->
+</section>
+<!-- <div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
   <!-- Professonal Certificate  SLider Section END -->
 <!-- Extracariculam Section Start -->
 <section class="mt-5" style="padding: 4%;" id="Extracariculamsection">
@@ -201,6 +233,84 @@
               </div>
           </div>
       </footer>
+      
+      <style>
+        /* Basic styles for the slider */
+        .slider {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px; /* Set a max width for desktop view */
+            margin: auto;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 50%; /* For desktop: show 2 images */
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%; /* Ensure images are responsive */
+            height: auto;
+            display: block; /* Removes bottom spacing */
+            cursor: pointer; /* Change cursor to indicate interactivity */
+        }
+        @media (max-width: 768px) {
+            .slide {
+                min-width: 100%; /* For mobile: show 1 image */
+            }
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 10;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        /* Styles for the thumbnail section */
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .thumbnail {
+            width: 100px; /* Set a fixed width for thumbnails */
+            margin: 0 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1); /* Scale up on hover */
+        }
+        /* Styles for the zoom modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
       <script type="module" src="src/JS/animation.js"></script>
       <script type="module" src="src/VUE/education.js"></script>
       <script type="module" src="src/VUE/header.js"></script>

@@ -124,37 +124,37 @@
                     </ul>
                   </div>
               </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 protfolioscontainer" v-else-if="ProtfoliosLIst2.length===0 && errormsg ==null" v-for="protfolio in ProtfoliosLIst" :key="protfolio.category">
-                    <div class="protfolioimage">
-                      <img v-bind:src="protfolio.Image" class="protfoliosimage">
-                    </div>
-                    <div class="protfoliodetails pb-4 mb-4 mt-2">
-                      <h3 style="font-size: 25px;"><b>{{protfolio.Title}}</b></h3>
-                      <p>
-                        {{protfolio.Details}}
-                      </p>
-                      <h6><b><i>Technology :</i></b></h6>
-                      <ul class="technolistprotfolio">
-                        <li v-for="techno in protfolio.Technology">
-                         {{techno}}
-                        </li>
-                      </ul>
+                <div class="col-lg-4 col-md-4 col-sm-12 protfolioscontainer" v-else-if="ProtfoliosLIst2.length===0 && errormsg ==null" v-for="(protfolio, index) in ProtfoliosLIst" :key="protfolio.category" :class="index >= 6 ? 'hiddenproject' : null">
+                  <div class="protfolioimage">
+                    <img v-bind:src="protfolio.Image" class="protfoliosimage">
+                  </div>
+                  <div class="protfoliodetails pb-4 mb-4 mt-2">
+                    <h3 style="font-size: 25px;"><b>{{protfolio.Title}}</b></h3>
+                    <p>
+                      {{protfolio.Details}}
+                    </p>
+                    <h6><b><i>Technology :</i></b></h6>
+                    <ul class="technolistprotfolio">
+                      <li v-for="techno in protfolio.Technology">
+                       {{techno}}
+                      </li>
+                    </ul>
 
-                      <h5 v-if="protfolio.DB.length>0">
-                        <b>
-                          Database: {{protfolio.DB}}
-                        </b>
-                      </h5>
-                    </div>
-                    <div class="protfoliosbutton mt-4">
-                      <ul class="socialiconsprotfoloils">
-                        <li>
-                          <a v-bind:href="protfolio.link" target="_blank">
-                            <i class="fa fa-github"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                    <h5 v-if="protfolio.DB.length>0">
+                      <b>
+                        Database: {{protfolio.DB}}
+                      </b>
+                    </h5>
+                  </div>
+                  <div class="protfoliosbutton mt-4">
+                    <ul class="socialiconsprotfoloils">
+                      <li>
+                        <a v-bind:href="protfolio.link" target="_blank">
+                          <i class="fa fa-github"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                     <!-- <div class="fortabmobile mt-4" style="height: 95px;">
                       <ul class="socialiconsprotfoloils">
                         <li>
@@ -164,6 +164,9 @@
                         </li>
                       </ul>
                     </div> -->
+                </div>
+                <div class="loadmorebutton" v-if="ProtfoliosLIst2.length===0 && ProtfoliosLIst.length>6">
+                  <button onclick="loadmoreprojects()"><i class="fa fa-download" style="font-size:24px">Load More</i></button>
                 </div>
                 <div v-else>
                   <h5 style="text-align: center;color: red;"><b><i>{{errormsg}}</i></b></h5>
@@ -195,7 +198,29 @@
           height: 97px;
            border-radius: 10px;
         }
+        .loadmorebutton
+        {
+          display: flex;
+          justify-content: center;
+        }
+        .loadmorebutton button
+        {
+          background-color: yellow;
+          padding: 2%;
+          border-radius: 5%;
+          color: black;
+        }
+        .hiddenproject
+        {
+          display: none;
+        }
       </style>
+      <script>
+function loadmoreprojects()
+{
+  $(".protfolioscontainer").removeClass("hiddenproject");
+}
+      </script>
       <script type="module" src="src/VUE/protfolios.js"></script>
       <script type="module" src="src/JS/animation.js"></script>
       <script type="module" src="src/VUE/header.js"></script>

@@ -25,7 +25,7 @@ const Professonalcertificatesnapshoot=Vue.createApp({
 
                 {nameinstitude:"UCDAVIS UNIVERSITY OF CALIFORNI",eduction:"JavaScript Basic",location:"Coursera"},
                 {nameinstitude:"THE HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY",eduction:"Front-End Web UI Frameworks and Tools: Bootstrap 4",location:"Coursera"},
-                {nameinstitude:"Johns Hopkins University",eduction:"HTML, CSS, and JavaScript for Web Developers",location:"Coursera"},
+                {nameinstitude:"IBM",eduction:"Data Visualization with python",location:"Coursera"},
 
                 {nameinstitude:"University of MICHIGAN",eduction:"Introduction to Data Science in Python",location:"Coursera"},
                 {nameinstitude:"IBM",eduction:"Data Analysis with python",location:"Coursera"},
@@ -67,7 +67,78 @@ const extracariculam= Vue.createApp({
         }
     }
 });
+
+
+
+// All Certificates Image SLider
+const ImageGallery= Vue.createApp({
+    data(){
+        return{
+            ImageGalleryList:[
+                {src:"src/Images/ProfessonalCertificates/DataStrucher.jpg"},
+                {src:"src/Images/ProfessonalCertificates/HTML, CSS, and JavaScript for Web Developers.png"},
+                {src:"src/Images/ProfessonalCertificates/jsbasic.png"},
+                {src:"src/Images/ProfessonalCertificates/buildingphp.png"},
+                {src:"src/Images/ProfessonalCertificates/dataanalysis.png"},
+                {src:"src/Images/ProfessonalCertificates/datavisulization.png"},
+                {src:"src/Images/ProfessonalCertificates/dbandsqlpython.png"},
+                {src:"src/Images/ProfessonalCertificates/dm.png"},
+                {src:"src/Images/ProfessonalCertificates/boothstrap.png"},
+                {src:"src/Images/ProfessonalCertificates/datascience.png"},
+                {src:"src/Images/ProfessonalCertificates/sql.png"},
+                {src:"src/Images/ProfessonalCertificates/pythonwebacess.png"},
+            ],
+            currentSlide: 0,
+            isModalOpen: false,
+            modalImage: ''
+        }
+    },
+    methods: {
+        showSlide(index) {
+            const totalSlides = this.ImageGalleryList.length; // Get total number of slides
+            if (index >= totalSlides) {
+                this.currentSlide = 0; // Wrap around to the first slide
+            } else if (index < 0) {
+                this.currentSlide = totalSlides - 1; // Wrap around to the last slide
+            } else {
+                this.currentSlide = index; // Set current slide
+            }
+
+            // Calculate offset based on the number of visible slides
+            const slidesToShow = window.innerWidth <= 768 ? 1 : 2; // Adjust number of slides shown based on viewport width
+            const offset = -this.currentSlide * (100 / slidesToShow); // Calculate offset for translation
+            document.querySelector(".slides").style.transform = `translateX(${offset}%)`; // Move slides
+        },
+        nextSlide() {
+            this.showSlide(this.currentSlide + 1); // Move to next slide
+        },
+        prevSlide() {
+            this.showSlide(this.currentSlide - 1); // Move to previous slide
+        },
+        // openModal(imageSrc) {
+        //     debugger
+        //     const img = document.querySelector('.showimage'); // If using a class
+        //    img.src = imageSrc;
+        //     //this.modalImage = imageSrc; // Set the image source for the modal
+        //     $('#thumbnails').css('display', 'block');
+        //     //$('#showimage').src=imageSrc;
+        //    //$("")
+        //    // this.isModalOpen = true; // Open the modal
+        // },
+        // closeModal() {
+        //     $('#thumbnails').css('display', 'none');
+        //     //this.isModalOpen = false; // Close the modal
+        // },
+        // selectImage(index) {
+        //     this.showSlide(index); // Show the selected image in the slider
+        // }
+    },
+    mounted() {
+        this.showSlide(this.currentSlide); // Show the initial slide
+    }
+});
 // All Mounted
 Educationsnapshoot.mount('#educationsection');
 Professonalcertificatesnapshoot.mount('#certicatessection');
 extracariculam.mount('#Extracariculamsection');
+ImageGallery.mount('#imagegallerycontainer');
