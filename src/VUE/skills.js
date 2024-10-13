@@ -3,7 +3,7 @@ const Skillslist= Vue.createApp({
     data(){
         return{
             capculetitle:"SKILLS",
-            ShortDesc:"Here is a quick summary of my most recent experiences:",
+            ShortDesc:"Here is a quick summary of my skills:",
             technotitle:"Technology Skills:",
             technoList:[
                 {
